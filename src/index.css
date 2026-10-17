@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface-container-low: #1c1b1d;
+  --color-primary-fixed: #dfe0ff;
+  --color-on-error: #690005;
+  --color-secondary: #ffafd5;
+  --color-surface-container-highest: #353436;
+  --color-surface-container-high: #2a2a2b;
+  --color-on-tertiary: #3f0c84;
+  --color-outline: #908f9e;
+  --color-on-primary-container: #fdfaff;
+  --color-surface-dim: #131315;
+  --color-inverse-on-surface: #313032;
+  --color-on-primary-fixed: #000965;
+  --color-on-secondary: #620042;
+  --color-error-container: #93000a;
+  --color-on-surface-variant: #c6c5d5;
+  --color-on-surface: #e5e1e3;
+  --color-on-error-container: #ffdad6;
+  --color-secondary-fixed-dim: #ffafd5;
+  --color-on-background: #e5e1e3;
+  --color-surface-tint: #bdc2ff;
+  --color-on-tertiary-container: #fffafb;
+  --color-primary-container: #5e6ad2;
+  --color-surface: #131315;
+  --color-secondary-container: #880a5e;
+  --color-on-tertiary-fixed-variant: #562d9b;
+  --color-inverse-primary: #4854bb;
+  --color-primary-fixed-dim: #bdc2ff;
+  --color-on-secondary-fixed: #3d0027;
+  --color-tertiary: #d4bbff;
+  --color-error: #ffb4ab;
+  --color-on-secondary-container: #ff92ca;
+  --color-on-primary-fixed-variant: #2e3aa2;
+  --color-surface-container-lowest: #0e0e0f;
+  --color-on-tertiary-fixed: #260059;
+  --color-surface-bright: #3a393a;
+  --color-on-primary: #121f8b;
+  --color-tertiary-container: #855ecd;
+  --color-background: #131315;
+  --color-primary: #bdc2ff;
+  --color-surface-variant: #353436;
+  --color-outline-variant: #454652;
+  --color-surface-container: #201f21;
+  --color-tertiary-fixed-dim: #d4bbff;
+  --color-on-secondary-fixed-variant: #880a5e;
+  --color-inverse-surface: #e5e1e3;
+  --color-secondary-fixed: #ffd8e8;
+  --color-tertiary-fixed: #ebdcff;
+
+  --font-label-code: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-body-lg: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-headline-md: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-body-md: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display-hero-mobile: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-label-nav: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-display-hero: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-body-sm: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-headline-sm: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-headline-lg: "Geist", ui-sans-serif, system-ui, sans-serif;
+
+  --text-label-code: 11px;
+  --text-label-code--line-height: 16px;
+  --text-label-code--letter-spacing: 0.04em;
+  --text-label-code--font-weight: 500;
+  --text-body-lg: 16px;
+  --text-body-lg--line-height: 26px;
+  --text-body-lg--letter-spacing: -0.01em;
+  --text-body-lg--font-weight: 400;
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 32px;
+  --text-headline-md--letter-spacing: -0.02em;
+  --text-headline-md--font-weight: 500;
+  --text-body-md: 14px;
+  --text-body-md--line-height: 22px;
+  --text-body-md--letter-spacing: -0.005em;
+  --text-body-md--font-weight: 400;
+  --text-display-hero-mobile: 36px;
+  --text-display-hero-mobile--line-height: 42px;
+  --text-display-hero-mobile--letter-spacing: -0.025em;
+  --text-display-hero-mobile--font-weight: 600;
+  --text-label-nav: 13px;
+  --text-label-nav--line-height: 18px;
+  --text-label-nav--letter-spacing: -0.01em;
+  --text-label-nav--font-weight: 500;
+  --text-display-hero: 56px;
+  --text-display-hero--line-height: 64px;
+  --text-display-hero--letter-spacing: -0.035em;
+  --text-display-hero--font-weight: 600;
+  --text-body-sm: 12px;
+  --text-body-sm--line-height: 18px;
+  --text-body-sm--letter-spacing: 0em;
+  --text-body-sm--font-weight: 400;
+  --text-headline-sm: 18px;
+  --text-headline-sm--line-height: 26px;
+  --text-headline-sm--letter-spacing: -0.015em;
+  --text-headline-sm--font-weight: 500;
+  --text-headline-lg: 32px;
+  --text-headline-lg--line-height: 40px;
+  --text-headline-lg--letter-spacing: -0.025em;
+  --text-headline-lg--font-weight: 600;
+
+  --spacing-space-xs: 0.375rem;
+  --spacing-space-sm: 0.75rem;
+  --spacing-space-md: 1.25rem;
+  --spacing-space-lg: 2rem;
+  --spacing-space-xl: 3.5rem;
+  --spacing-gutter: 1.25rem;
+  --spacing-gutter-lg: 1.5rem;
+  --spacing-margin: 1.5rem;
+  --spacing-margin-lg: 3rem;
+
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  overscroll-behavior: none;
+  background: #131315;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  line-height: 1;
+  user-select: none;
+}
+
+@keyframes scan {
+  0%,
+  100% {
+    top: 10%;
+  }
+  50% {
+    top: 84%;
+  }
+}
+
+@media (max-width: 767px) {
+  .text-display-hero {
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: -0.025em;
+  }
+}
