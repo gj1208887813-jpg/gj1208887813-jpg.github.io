@@ -4,9 +4,9 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
-// Project pages are served from https://<user>.github.io/<repo>/, so every
-// generated asset URL needs the repository name as its prefix.
-const BASE = '/vibecoding-experience/'
+// Hosted from the user site repo <user>.github.io, so the site is served from
+// the domain root and asset URLs need no repository prefix.
+const BASE = '/'
 
 // GitHub Pages serves 404.html for unknown paths and runs Jekyll unless a
 // .nojekyll marker exists. Together they let BrowserRouter deep links resolve.

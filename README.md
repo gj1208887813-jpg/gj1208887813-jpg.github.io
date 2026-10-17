@@ -4,7 +4,7 @@
 
 技术栈：React 19 · Vite 8 · React Router 7 · Tailwind CSS 4 · WebGL 流体光标特效。
 
-线上地址：<https://gj1208887813-jpg.github.io/vibecoding-experience/>
+线上地址：<https://gj1208887813-jpg.github.io/>
 
 ## 本地开发
 
@@ -20,14 +20,15 @@ npm run lint
 
 本项目使用 **分支 + `/docs` 目录** 的发布源（Deploy from a branch）。
 
+- 发布仓库：`gj1208887813-jpg/gj1208887813-jpg.github.io`（用户站点仓库，发布在域名根路径）
 - 发布分支：`main`
 - 发布目录：`/docs`
 - 构建命令：`npm run build`，Vite 的 `build.outDir` 已设为 `docs`，`npm run build` 会直接覆盖该目录。
 
 `vite.config.js` 里做了三件 Pages 必需的适配：
 
-1. `base: '/vibecoding-experience/'`
-   项目型 Pages 站点发布在 `https://<user>.github.io/<repo>/` 子路径下，所有静态资源 URL 都必须带仓库名前缀，否则会出现资源 404、页面白屏。
+1. `base: '/'`
+   本项目托管在用户站点仓库 `<user>.github.io`，站点位于**域名根路径**，因此资源 URL 不需要仓库名前缀（若改回普通项目仓库，必须改成 `'/<repo-name>/'`，否则资源会 404、白屏）。
 2. 生成 `404.html`（内容与 `index.html` 相同）
    站点使用 `BrowserRouter`，直接访问 `/about`、`/projects` 这类深层链接时，Pages 会用 `404.html` 兜底，从而交给前端路由接管。
 3. 生成 `.nojekyll`
